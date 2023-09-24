@@ -1,38 +1,57 @@
 import { useState } from 'react'
 import { useCallback } from "react";
-import Particles from "react-particles";
-import AnimatedCursor from "react-animated-cursor"
-import { loadSlim } from "tsparticles-slim";
-import particlesOptions from "./assets/misc/particles.json"
 import './App.css'
 import Navbar from "./components/Navbar/Navbar"
+import Navbar2 from './components/Navbar2/Navbar2';
 function App() {
-  const particlesInit = useCallback(async engine => {
-    console.log("Carregando particulas....")
-    await loadSlim(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async container => {
-    await console.log("Particulas carregadas!");
-  }, []);
   return (
     <>
       <div>
-        <Navbar></Navbar>
-        <AnimatedCursor
-          color='141, 208, 255'
-          innerSize={8}
-          outerSize={35}
-          innerScale={1}
-          outerScale={1.7} />
-        <div className='particles-container'>
-          <Particles id="tsparticles" options={particlesOptions} init={particlesInit} loaded={particlesLoaded} />
+        <Navbar2></Navbar2>
+        <div className='content'>
+
+          <section id="home">
+            <div className='main-container'>
+              <div className='main-text-container' style={{ marginTop: "4rem" }}>
+                <h1 className='big-size text-black-alpha-80'>Olá! Sou <span className='text-primary underfont'>Michel Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
+              </div>
+            </div>
+          </section>
+
+          <section id="about">
+            <div className='main-container'>
+              <div className='main-text-container' style={{ marginTop: "4rem" }}>
+                <h1 className='big-size text-color'>Michel <span className='text-primary'>Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
+              </div>
+            </div>
+          </section>
+
+
+          <section id="projects">
+            <div className='main-container'>
+              <div className='main-text-container' style={{ marginTop: "4rem" }}>
+                <h1 className='big-size'>Michel <span className='text-primary'>Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
+              </div>
+            </div>
+          </section>
+
+          <section id="formation">
+            <div className='main-container'>
+              <div className='main-text-container' style={{ marginTop: "4rem" }}>
+                <h1 className='big-size'>Michel <span className='text-primary'>Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
+              </div>
+            </div>
+          </section>
+
+          <section id="carrer">
+            <div className='main-container'>
+              <div className='main-text-container' style={{ marginTop: "4rem" }}>
+                <h1 className='big-size'>Michel <span className='text-primary'>Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
+              </div>
+            </div>
+          </section>
         </div>
-        <div className='main-container'>
-          <div className='main-text-container'>
-            <h1>Olá! Me chamo <span className='text-blue'>Michel</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
-          </div>
-        </div>
+
 
 
 
