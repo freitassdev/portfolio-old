@@ -61,4 +61,15 @@
     .main-container {
         flex-direction: column;
     }
+    .main-image-container {
+        display: none;
+    }
+    .main-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .main-text-container h1 {
+        font-size: 40px !important;
+    }
 }
