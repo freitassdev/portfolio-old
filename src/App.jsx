@@ -2,18 +2,20 @@ import { useState } from 'react'
 import { useCallback } from "react";
 import './App.css'
 import Navbar from "./components/Navbar/Navbar"
-import Navbar2 from './components/Navbar2/Navbar2';
+import illustration from "./assets/images/illustration3.svg"
 function App() {
   return (
     <>
       <div>
-        <Navbar2></Navbar2>
+        <Navbar></Navbar>
         <div className='content'>
-
           <section id="home">
             <div className='main-container'>
               <div className='main-text-container' style={{ marginTop: "4rem" }}>
-                <h1 className='big-size text-black-alpha-80'>Olá! Sou <span className='text-primary underfont'>Michel Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
+                <h1 className='big-size text-black-alpha-80'>Olá! Sou <span className='text-primary underfont'>Michel&nbsp;</span><span className='text-primary underfont'>Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
+              </div>
+              <div className='main-image-container'>
+                <img src={illustration} alt="Illustration" />
               </div>
             </div>
           </section>

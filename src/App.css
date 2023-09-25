@@ -1,16 +1,27 @@
 .main-container { 
     width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    margin-top: 3rem;
 }
 .main-text-container {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+}
+
+.main-image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align: center;
+}
+
+.main-image-container img {
+    margin-top: 4rem;
+    height: 70vh;
 }
 
 .underfont {
@@ -28,4 +39,26 @@
     bottom: 0;
     height: 15px;
     z-index: -1;
+}
+.underfont-dark {
+    display: inline-block;
+    position: relative;
+    opacity: 1;
+}
+.underfont-dark:after {
+    position: absolute;
+    content: "";
+    background: rgba(101, 101, 102, 0.3);
+    border-top: 2px solid rgba(101, 101, 102,.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 15px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 920px) {
+    .main-container {
+        flex-direction: column;
+    }
 }
