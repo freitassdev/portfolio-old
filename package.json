@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.40",
     "primeflex": "^3.3.1",
     "primeicons": "^6.0.1",
     "primereact": "^9.6.2",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.8.1",
     "react-dom": "^18.2.0",
+    "react-fullpage": "^0.1.19",
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
     "react-scroll": "^1.8.9",
