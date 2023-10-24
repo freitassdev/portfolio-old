@@ -110,3 +110,10 @@ h1.big-size {
   flex-grow: 1;
   background-color: var(--text-color);
 }
+
+
+@media screen and (max-width: 620px) {
+  .section-title {
+    font-size: 2.1em !important;
+  }
+}

@@ -72,22 +72,6 @@
     height: 10px;
     z-index: -1;
 }
-@media screen and (max-width: 920px) {
-    .main-container {
-        flex-direction: column;
-    }
-    .main-image-container {
-        display: none;
-    }
-    .main-text-container {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-    .main-text-container h1 {
-        font-size: 48px !important;
-    }
-}
 
 
 /*About me*/
@@ -99,8 +83,8 @@
 
 .about-box {
     height: 100%;
-    margin: 100px auto 0;
-    padding: 20px 70px 20px 70px;
+    margin: 40px auto 0 auto;
+    padding: 20px 70px 80px 70px;
     width: 95%;
     border-top: 1px solid #acacad;
     border-left: 1px solid #acacad;
@@ -156,4 +140,37 @@
 h1, h2, h3, p {
     margin-block-start: 0em;
     margin-block-end: 0em;
+}
+@media screen and (max-width: 920px) {
+    #about {
+        padding: 3px;
+    }
+    .about-box {
+        padding: 20px;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-texts {
+        width: 100%;
+    }
+
+    .about-skills {
+        width: 100%;
+    }
+    .main-container {
+        flex-direction: column;
+    }
+    .main-image-container {
+        display: none;
+    }
+    .main-text-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .main-text-container h1 {
+        font-size: 48px !important;
+    }
 }

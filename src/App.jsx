@@ -41,7 +41,7 @@ function App() {
                   </p>
                 </div>
                 <div className="about-skills">
-                  <h2 className="skills-title">Minhas Habilidades</h2>
+                  <h2 className="skills-title" style={{ width: "100%" }}>Minhas Habilidades</h2>
                   <span className="skill">JavaScript</span>
                   <span className="skill">TypeScript</span>
                   <span className="skill">Node.js</span>
@@ -55,7 +55,6 @@ function App() {
                   <span className="skill">Bitbucket</span>
                   <span className="skill">Vercel</span>
                 </div>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
               </div>
             </div>
           </section>
