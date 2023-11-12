@@ -11,17 +11,19 @@
     padding: 30px;
 }
 
-.main-image-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.main-title {
+    text-align: center;
+    font-size: 4rem;
 }
 
-.main-image-container img {
-    margin-top: 4rem;
-    height: 70vh;
+.main-computer-container {
+    width: 700px;
+    height: 380px;
+    display: flex;  
+    justify-content: end;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 50px;
 }
 
 .underfont {
@@ -75,13 +77,13 @@
 
 
 /*About me*/
-#about {
+#about-projects {
     width: 100%;
     background-image: url(assets/images/topography.svg);
     padding: 20px;
 }
 
-.about-box {
+.box {
     height: 100%;
     margin: 40px auto 0 auto;
     padding: 20px 70px 80px 70px;
@@ -161,9 +163,6 @@ h1, h2, h3, p {
     }
     .main-container {
         flex-direction: column;
-    }
-    .main-image-container {
-        display: none;
     }
     .main-text-container {
         display: flex;
