@@ -1,0 +1,42 @@
+.project-card {
+    flex-basis: 370px;
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+}
+
+.project-card-image {
+    position: relative;
+    height: 230px;
+    background-color: var(--surface-400);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-card-image img {
+    height: 180px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 6px 6px 0 0;
+    transition: all .2s;
+}
+
+.project-card-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-card-image:hover img {
+    transform: translate(-50%) scale(1.08) rotate(2deg);
+}
+
+.project-card-tech {
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}

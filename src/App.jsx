@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from "./components/Navbar/Navbar"
 import illustration from "./assets/images/illustration3.svg"
 import ComputersCanvas from './components/3d/Computer';
+import ProjectCard from './components/ProjectCard/ProjectCard';
 function App() {
   return (
     <>
@@ -16,12 +17,14 @@ function App() {
                 <h1 className='section-title text-primary main-title'><span className='text-primary underfont'>Michel&nbsp;</span><span className='text-primary underfont'>Freitas</span></h1>
               </div>
               <div className='main-computer-container'>
-                <ComputersCanvas/>
+                <ComputersCanvas />
               </div>
             </div>
           </section>
-          <section id="about-projects">
+          <section id="box">
             <div className="box">
+              <div id="about">
+
               <div className='header-section'>
                 <div className="header-line"></div>
                 <h1 className="section-title big-size">
@@ -55,24 +58,25 @@ function App() {
                   <span className="skill">Vercel</span>
                 </div>
               </div>
+              </div>
               <br />
-              <div className='header-section' style={{ flexDirection: "row" }}>
-                <div className="header-line"></div>
-                <h1 className="section-title big-size">
-                   <span className="underfont">Projetos</span><span className="text-primary font-extrabold">&nbsp;#</span>
-                </h1>
+              <div id="projects">
+                <div className='header-section' style={{ flexDirection: "row" }}>
+                  <div className="header-line"></div>
+                  <h1 className="section-title big-size">
+                    <span className="underfont">Projetos</span><span className="text-primary font-extrabold">&nbsp;#</span>
+                  </h1>
+
+                </div>
+                <div className="projects-container">
+                  <ProjectCard /><ProjectCard /><ProjectCard /><ProjectCard /><ProjectCard /><ProjectCard />
+                </div>
               </div>
             </div>
           </section>
 
 
-          <section id="projects">
-            <div className='main-container'>
-              <div className='main-text-container' style={{ marginTop: "4rem" }}>
-                <h1 className='big-size'>Michel <span className='text-primary'>Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
-              </div>
-            </div>
-          </section>
+          
 
           <section id="formation">
             <div className='main-container'>

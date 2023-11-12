@@ -77,7 +77,7 @@
 
 
 /*About me*/
-#about-projects {
+#box {
     width: 100%;
     background-image: url(assets/images/topography.svg);
     padding: 20px;
@@ -172,4 +172,13 @@ h1, h2, h3, p {
     .main-text-container h1 {
         font-size: 48px !important;
     }
+}
+
+.projects-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
