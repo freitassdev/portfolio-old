@@ -34,7 +34,7 @@ function App() {
               <div className="about-content">
                 <div className="about-texts">
                   <p className="about-text">
-                    Olá! Me chamo Michel, sou um estudante e desenvolvedor apaixonado por programação desde os 12 anos. Atualmente tenho 16 anos e moro em Pirituba - São Paulo. Estou cursando Desenvolvimento de Sistemas na Etec Jaraguá e também faço estágio como Desenvolvedor Web na Focus Têxtil (a maior importadora e exportadora de tecidos do Brasil). Atuo no front-end e no back-end, utilizando as principais tecnologias do Node.js (como React e Express). Por enquanto ando estudando um pouco de C# (ou CSharp para os mais íntimos) e MySQL.
+                    Olá! Me chamo Michel, sou um estudante e desenvolvedor apaixonado por programação desde os 12 anos. Atualmente tenho 16 anos e moro em São Paulo. Estou cursando Desenvolvimento de Sistemas em uma Etec e também faço estágio como Desenvolvedor Web na Focus Têxtil (a maior importadora e exportadora de tecidos do Brasil). Atuo no front-end e no back-end, utilizando as principais tecnologias do Node.js (como React e Express). Por enquanto ando estudando um pouco de C# (ou CSharp para os mais íntimos) e MySQL.
                   </p>
 
                   <p className="about-text">

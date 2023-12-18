@@ -86,7 +86,7 @@
 .box {
     height: 100%;
     margin: 40px auto 0 auto;
-    padding: 20px 70px 80px 70px;
+    padding: 50px 70px 80px 70px;
     width: 95%;
     border-top: 1px solid #acacad;
     border-left: 1px solid #acacad;
@@ -171,6 +171,10 @@ h1, h2, h3, p {
     }
     .main-text-container h1 {
         font-size: 48px !important;
+    }
+
+    .box {
+        padding: 50px 20px 80px 20px;
     }
 }
 
