@@ -6,8 +6,10 @@
     margin-top: 3rem;
 }
 .main-text-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 30px;
 }
 
@@ -16,7 +18,7 @@
     font-size: 4rem;
 }
 
-.main-computer-container {
+/* .main-computer-container {
     width: 700px;
     height: 380px;
     display: flex;  
@@ -24,7 +26,7 @@
     align-items: center;
     margin-top: 5rem;
     margin-left: 50px;
-}
+} */
 
 .underfont {
     display: inline-block;
@@ -79,7 +81,7 @@
 /*About me*/
 #box {
     width: 100%;
-    background-image: url(assets/images/topography.svg);
+    background-image: var(--topography-background);
     padding: 20px;
 }
 
@@ -88,11 +90,11 @@
     margin: 40px auto 0 auto;
     padding: 50px 70px 80px 70px;
     width: 95%;
-    border-top: 1px solid #acacad;
-    border-left: 1px solid #acacad;
+    border-top: 1px solid var(--color-a);
+    border-left: 1px solid var(--color-a);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(1.5px);
-    background: rgba(248, 249, 250, .2);
+    background: var(--box-color);
     box-shadow: 20px 20px 50px #00000080;
     border-radius: 16px;
 }
@@ -174,7 +176,8 @@ h1, h2, h3, p {
     }
 
     .box {
-        padding: 50px 20px 80px 20px;
+        padding: 30px 20px 80px 20px;
+        width: 100%;
     }
 }
 

@@ -6,7 +6,7 @@
     height: 4rem;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    background-color: rgba(182, 182, 183, .3);
+    background-color: var(--rgba-color);
     backdrop-filter: blur(8px);
     position: fixed;
     top: 0;

@@ -1,9 +1,9 @@
-import { useState } from 'react'
-import { useCallback } from "react";
+// import { useState } from 'react'
+// import { useCallback } from "react";
 import './App.css'
 import Navbar from "./components/Navbar/Navbar"
-import illustration from "./assets/images/illustration3.svg"
-import ComputersCanvas from './components/3d/Computer';
+// import illustration from "./assets/images/illustration3.svg"
+// import ComputersCanvas from './components/3d/Computer';
 import ProjectCard from './components/ProjectCard/ProjectCard';
 function App() {
   return (
@@ -16,9 +16,9 @@ function App() {
               <div className='main-text-container' style={{ marginTop: "4rem" }}>
                 <h1 className='section-title text-primary main-title'><span className='text-primary underfont'>Michel&nbsp;</span><span className='text-primary underfont'>Freitas</span></h1>
               </div>
-              <div className='main-computer-container'>
+              {/* <div className='main-computer-container'>
                 <ComputersCanvas />
-              </div>
+              </div> */}
             </div>
           </section>
           <section id="box">

@@ -8,7 +8,7 @@
 .project-card-image {
     position: relative;
     height: 230px;
-    background-color: var(--surface-400);
+    background-color: var(--surface-a);
     border-radius: 10px;
     overflow: hidden;
 }
