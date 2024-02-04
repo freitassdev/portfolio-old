@@ -29,6 +29,7 @@
     flex-direction: row;
     align-items: center;
     gap: 12px;
+    color: var(--title-color);
 }
 
 .project-card-image:hover img {
@@ -39,4 +40,24 @@
     color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+
+.badge {
+    width: auto;
+    height: auto;
+    position: absolute;
+    padding: 4px 8px 30px 8px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: var(--surface-a);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: -25px;
+    margin-left: 10px;
+}
+
+.badges-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
 }

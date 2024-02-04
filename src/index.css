@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
 
 ::selection {
   background-color: #14b8a6; /* Cor de fundo da seleção */
@@ -21,11 +21,14 @@ html {
   --box-color: rgba(248, 249, 250, .2);
   --topography-background: url(assets/images/topography.svg);
   --color-a: #acacad;
+  --hex-color: #e4e5e6;
+  --surface-a: #bdbdbd !important;
+  --title-color: rgba(0,0,0,0.8);
 }
 
-body {
+body.is-dark {
   --section-title-color: #ffffff;
-  --rgba-color: rgba(24, 24, 27, .3);
+  --rgba-color: rgba(37, 37, 41, .3);
   --surface-b: #09090b;
   --surface-a: #252529;
   --surface-c: #18181b;
@@ -33,11 +36,14 @@ body {
   --points-color: rgba(40, 40, 49, 1);
   --topography-background: url(assets/images/topography-white.svg);
   --text-secondary-color: #ffff;
-  --text-color: #d1d1d1;
+  --text-color: #fff;
   --color-a: #454554;
+  --hex-color: #111114;
+  --title-color: #fff;
 }
 
 body {
+  transition: background-color 0.3s;
   padding: 0;
   margin: 0;
   background-color: var(--surface-b);
@@ -68,6 +74,30 @@ body::before {
   z-index: -10;
 }
 
+body {
+  --sb-track-color: #232e33;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 100px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--primary-color)
+                     var(--sb-track-color);
+  }
+}
 
 ul {
   list-style: none;
@@ -75,6 +105,10 @@ ul {
 
 .bold {
   font-family: 'Raleway', sans-serif;
+}
+
+.fw500 {
+  font-weight: 500;
 }
 
 .text-primary {

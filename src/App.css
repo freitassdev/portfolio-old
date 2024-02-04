@@ -3,30 +3,70 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 .main-text-container {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     align-items: center;
     padding: 30px;
 }
 
-.main-title {
+.main-hello-text h1 {
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400 !important;
     text-align: center;
-    font-size: 4rem;
+    color: var(--title-color);
+    
 }
 
-/* .main-computer-container {
-    width: 700px;
-    height: 380px;
-    display: flex;  
-    justify-content: end;
-    align-items: center;
-    margin-top: 5rem;
-    margin-left: 50px;
-} */
+.main-principal-title {
+    margin-top: 1rem;
+    max-width: 90vh;
+    text-align: center;
+}
+
+.main-principal-title h1 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600 !important;
+    color: var(--title-color);
+}
+
+.emoji {
+    font-size: 1.5rem;
+}
+
+.main-subtitle {
+    margin-top: 1rem;
+    text-align: center;
+    max-width: 80vh;
+}
+
+.main-subtitle p {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300 !important;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 500px){
+    .main-container {
+        margin-top: 2.5rem;
+    }
+
+    .main-text-container {
+        gap: 5px;
+    }
+
+    .main-principal-title h1 {
+        line-height: 3rem;
+        font-size: 2.5rem;
+    }
+}
 
 .underfont {
     display: inline-block;
@@ -171,9 +211,7 @@ h1, h2, h3, p {
         flex-direction: column;
         padding: 20px;
     }
-    .main-text-container h1 {
-        font-size: 48px !important;
-    }
+    
 
     .box {
         padding: 30px 20px 80px 20px;

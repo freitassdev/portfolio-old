@@ -4,11 +4,11 @@ import { HiBars3BottomRight } from 'react-icons/hi2';
 import { IconContext } from 'react-icons';
 import Scrollspy from 'react-scrollspy';
 import { Link } from 'react-scroll';
+import SwitchTheme from '../SwitchTheme/SwitchTheme';
 function Navbar() {
     const [mobile, setMobile] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const handleResize = () => {
-        console.log(window.innerWidth <= 1150);
         if (window.innerWidth <= 1150) {
             setIsMobile(true);
         } else {
@@ -32,7 +32,6 @@ function Navbar() {
             <div className={mobile && isMobile ? 'navbar border-bottom' : 'navbar'}>
                 <div className="navbar-logo">
                     <h1 className='text-primary'>&lt;/<span className='text-secondary'>Michel Freitas</span>&gt;</h1>
-
                 </div>
 
                 <div className={mobile && isMobile ? 'navbar-mobile-items border-bottom' : ''} style={{ transitionDuration: "0.2s", transitionTimingFunction: "ease-in-out" }}>
@@ -85,11 +84,13 @@ function Navbar() {
                         <li className='nav-icon'>
                             <i className="pi pi-twitter" style={{ fontSize: '1.5rem' }}></i>
                         </li>
+                        <li className='nav-icon'>
+                            <SwitchTheme></SwitchTheme>
+                        </li>
                     </ul>
                     <IconContext.Provider value={{ color: "#14b8a6", size: "35px" }}>
                         <button className='button-toggle' onClick={() => {
                             setMobile(!mobile)
-                            console.log(mobile)
                         }}><HiBars3BottomRight /></button>
                     </IconContext.Provider>
                 </div>

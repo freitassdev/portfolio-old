@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar"
 // import illustration from "./assets/images/illustration3.svg"
 // import ComputersCanvas from './components/3d/Computer';
 import ProjectCard from './components/ProjectCard/ProjectCard';
+
 function App() {
   return (
     <>
@@ -14,11 +15,16 @@ function App() {
           <section id="home">
             <div className='main-container'>
               <div className='main-text-container' style={{ marginTop: "4rem" }}>
-                <h1 className='section-title text-primary main-title'><span className='text-primary underfont'>Michel&nbsp;</span><span className='text-primary underfont'>Freitas</span></h1>
+                <div className="main-hello-text">
+                  <h1><span className='emoji'>👋🏼 </span>Olá, me chamo <span className="text-primary fw500">Michel Freitas</span>!</h1>
+                </div>
+                <div className="main-principal-title">
+                  <h1>Arquitetando o <span className="text-primary">Futuro</span> com <span className="text-primary">Tecnologia</span> e <span className="text-primary">Criatividade</span></h1>
+                </div>  
+                <div className="main-subtitle">
+                  <p><span className="text-primary fw500">Apresentando</span> meu próprio portfólio como um reflexo da minha <span className="text-primary fw500">paixão</span> por esta área. Um <span className="text-primary fw500">desenvolvedor</span> comprometido com a arte de criar experiências únicas, tanto no <span className="text-primary fw500">Front-End</span> quanto no <span className="text-primary fw500">Back-End</span>. Seja bem-vindo!</p>
+                </div>
               </div>
-              {/* <div className='main-computer-container'>
-                <ComputersCanvas />
-              </div> */}
             </div>
           </section>
           <section id="box">
@@ -34,12 +40,12 @@ function App() {
               <div className="about-content">
                 <div className="about-texts">
                   <p className="about-text">
-                    Olá! Me chamo Michel, sou um estudante e desenvolvedor apaixonado por programação desde os 12 anos. Atualmente tenho 16 anos e moro em São Paulo. Estou cursando Desenvolvimento de Sistemas em uma Etec e também faço estágio como Desenvolvedor Web na Focus Têxtil (a maior importadora e exportadora de tecidos do Brasil). Atuo no front-end e no back-end, utilizando as principais tecnologias do Node.js (como React e Express). Por enquanto ando estudando um pouco de C# (ou CSharp para os mais íntimos) e MySQL.
+                    Olá! Me chamo Michel, sou um estudante e desenvolvedor apaixonado por programação desde os 12 anos. Atualmente tenho 16 anos e moro em São Paulo. Estou cursando Desenvolvimento de Sistemas em uma Etec e também faço estágio como Desenvolvedor Web na empresa Focus Têxtil. Atuo no front-end e no back-end, utilizando as principais tecnologias do Node.js (como React, Express e um pouquinho de Angular). Por enquanto ando estudando um pouco de C# (ou CSharp para os mais íntimos) e MySQL.
                   </p>
 
                   <p className="about-text">
                     <br />
-                    Saindo um pouco dessa rotina de trabalho e estudos, costumo jogar videogame e vôlei, ouvir música e assistir filmes e séries (quem não gosta de um cineminha, não é mesmo? rsrs). Além disso gosto de viajar, desenvolver alguns projetos, e passear pela cidade. Estou empolgado em continuar explorando o mundo da tecnologia e ansioso para colaborar em projetos inovadores. Vamos construir algo incrível juntos!
+                    Saindo um pouco dessa rotina de estágio e estudos, costumo jogar videogame e vôlei, ouvir música e assistir filmes e séries (quem não gosta de um cineminha, não é mesmo? rsrs). Além disso gosto de viajar, desenvolver alguns projetos, e passear pela cidade. Estou empolgado em continuar explorando o mundo da tecnologia e ansioso para colaborar em projetos inovadores. Vamos construir algo incrível juntos!
                   </p>
                 </div>
                 <div className="about-skills">
@@ -48,6 +54,7 @@ function App() {
                   <span className="skill">TypeScript</span>
                   <span className="skill">Node.js</span>
                   <span className="skill">React</span>
+                  <span className="skill">PrimeReact</span>
                   <span className="skill">Express</span>
                   <span className="skill">MongoDB</span>
                   <span className="skill">HTML</span>
@@ -69,15 +76,33 @@ function App() {
 
                 </div>
                 <div className="projects-container">
-                  <ProjectCard /><ProjectCard /><ProjectCard /><ProjectCard /><ProjectCard /><ProjectCard />
+                  <ProjectCard 
+                  inDevelopment 
+                  title='Chat App'
+                  tech='React - TypeScript - Express - MongoDB' 
+                  description='Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva.'
+                  github='https://github.com/freitassdev/chat-frontend'
+                  url='https://chat.michelfreitas.com' />
+                  <ProjectCard 
+                  title='Inteligência Artificial' 
+                  tech='Python - Coco Dataset - Yolo' 
+                  description='No Hackathon 2023 do Centro Paula Souza, desenvolvi uma inteligência artificial com o propósito de identificar em tempo real resíduos poluentes que foram descartados inadequadamente, como garrafas plásticas.'
+                  github='https://github.com/freitassdev' />
+
+                  <ProjectCard 
+                  title='DS Jaraguá'
+                  tech='React - Node - PrimeReact' 
+                  description='Elaborado com o objetivo de promover meu curso e atrair novos alunos para minha Etec, este projeto contou com a participação de outros dois amigos. Na liderança da equipe, ministrei instruções básicas sobre React.js para eles.'
+                  github='https://github.com/freitassdev/ds-etecjaragua'
+                  url='https://ds-jaragua.vercel.app' />
+                  <ProjectCard />
+                  <ProjectCard />
+                  <ProjectCard />
                 </div>
               </div>
             </div>
           </section>
-
-
           
-
           <section id="formation">
             <div className='main-container'>
               <div className='main-text-container' style={{ marginTop: "4rem" }}>
@@ -94,9 +119,6 @@ function App() {
             </div>
           </section>
         </div>
-
-
-
 
 
         <hr style={{ padding: "0", margin: "0", backgroundColor: "var(--primary-color)", border: "none", height: "2px" }} />
