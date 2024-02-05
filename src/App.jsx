@@ -1,11 +1,11 @@
 // import { useState } from 'react'
 // import { useCallback } from "react";
+import Footer from './components/Footer/Footer';
 import './App.css'
 import Navbar from "./components/Navbar/Navbar"
 // import illustration from "./assets/images/illustration3.svg"
 // import ComputersCanvas from './components/3d/Computer';
 import ProjectCard from './components/ProjectCard/ProjectCard';
-
 function App() {
   return (
     <>
@@ -30,7 +30,7 @@ function App() {
           <section id="box">
             <div className="box">
               <div id="about">
-
+              
               <div className='header-section'>
                 <div className="header-line"></div>
                 <h1 className="section-title big-size">
@@ -83,6 +83,7 @@ function App() {
                   description='Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva.'
                   github='https://github.com/freitassdev/chat-frontend'
                   url='https://chat.michelfreitas.com' />
+
                   <ProjectCard 
                   title='Inteligência Artificial' 
                   tech='Python - Coco Dataset - Yolo' 
@@ -92,9 +93,10 @@ function App() {
                   <ProjectCard 
                   title='DS Jaraguá'
                   tech='React - Node - PrimeReact' 
-                  description='Elaborado com o objetivo de promover meu curso e atrair novos alunos para minha Etec, este projeto contou com a participação de outros dois amigos. Na liderança da equipe, ministrei instruções básicas sobre React.js para eles.'
+                  description='Elaborado com o objetivo de promover meu curso e atrair novos alunos para minha Etec, este projeto contou com a participação de outros dois amigos. Na liderança da equipe, ministrei instruções básicas sobre React.js e node.js para eles.'
                   github='https://github.com/freitassdev/ds-etecjaragua'
                   url='https://ds-jaragua.vercel.app' />
+                  
                   <ProjectCard />
                   <ProjectCard />
                   <ProjectCard />
@@ -119,17 +121,9 @@ function App() {
             </div>
           </section>
         </div>
-
-
-        <hr style={{ padding: "0", margin: "0", backgroundColor: "var(--primary-color)", border: "none", height: "2px" }} />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />Olá, sou [Seu Nome], um desenvolvedor full stack apaixonado. Comecei a explorar a programação aos 12 anos e desde então estou mergulhado nesse universo fascinante.
-
-        Minha paixão pela criação de soluções tecnologicas só cresceu com o tempo. Adoro transformar desafios em código funcional e acredito que a programação é uma forma de arte que combina lógica e criatividade.
-
-        Quando não estou codificando, gosto de jogar, ouvir música e viajar. Estou empolgado em continuar explorando o mundo da tecnologia e ansioso para colaborar em projetos inovadores. Vamos construir algo incrível juntos!
-
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
+        <div className="footer-container">
+          <Footer/>
+        </div>
       </div>
     </>
   );

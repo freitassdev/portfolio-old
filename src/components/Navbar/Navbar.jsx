@@ -38,20 +38,20 @@ function Navbar() {
                     <ul className={mobile && isMobile ? 'navbar-items-mobile' : 'navbar-items-list'}>
                         <Scrollspy items={['home', 'about', 'projects', 'formation', 'carrer']} currentClassName="active" className={mobile && isMobile ? 'navbar-items-mobile' : 'navbar-items-list'}>
                             <li className="nav-item">
-                                <Link to="home" offset={-64} spy={true} smooth={true} duration={500}><a style={{ textDecoration: "none" }}>INÍCIO</a></Link>
+                                <Link to="home" offset={-64} spy={true} smooth={true} duration={500}>INÍCIO</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="about" offset={-64} spy={true} smooth={true} duration={500}><a style={{ textDecoration: "none" }}>SOBRE MIM</a></Link>
+                                <Link to="about" offset={-64} spy={true} smooth={true} duration={500}>SOBRE MIM</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link to="projects" offset={-64} spy={true} smooth={true} duration={500}><a style={{ textDecoration: "none" }}>PROJETOS</a></Link>
+                                <Link to="projects" offset={-64} spy={true} smooth={true} duration={500}>PROJETOS</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="formation" offset={-64} spy={true} smooth={true} duration={500}><a style={{ textDecoration: "none" }}>FORMAÇÃO</a></Link>
+                                <Link to="formation" offset={-64} spy={true} smooth={true} duration={500}>FORMAÇÃO</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="carrer" offset={-64} spy={true} smooth={true} duration={500}><a style={{ textDecoration: "none" }}>CARREIRA</a></Link>
+                                <Link to="carrer" offset={-64} spy={true} smooth={true} duration={500}>CARREIRA</Link>
                             </li>
                         </Scrollspy>
                         <ul className='nav-icons mobile'>
@@ -89,7 +89,7 @@ function Navbar() {
                         </li>
                     </ul>
                     <IconContext.Provider value={{ color: "#14b8a6", size: "35px" }}>
-                        <button className='button-toggle' onClick={() => {
+                        <button aria-label="Toggle" className='button-toggle' onClick={() => {
                             setMobile(!mobile)
                         }}><HiBars3BottomRight /></button>
                     </IconContext.Provider>

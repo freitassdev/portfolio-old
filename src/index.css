@@ -23,7 +23,11 @@ html {
   --color-a: #acacad;
   --hex-color: #e4e5e6;
   --surface-a: #bdbdbd !important;
+  --surface-c: #e2e2e2 !important;
   --title-color: rgba(0,0,0,0.8);
+  --text-color: #323232 !important;
+  --sb-track-color: #232e33;
+  --sb-size: 10px;
 }
 
 body.is-dark {
@@ -55,8 +59,6 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-
-
 body::before {
   content: "";
   position: absolute;
@@ -72,11 +74,6 @@ body::before {
   pointer-events: none;
   /* Impedir interação com as bolinhas */
   z-index: -10;
-}
-
-body {
-  --sb-track-color: #232e33;
-  --sb-size: 10px;
 }
 
 body::-webkit-scrollbar {

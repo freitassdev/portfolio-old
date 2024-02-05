@@ -34,8 +34,8 @@ const ProjectCard = ({ github, url, inDevelopment = false, title = "Em breve.", 
                 <div className="project-card-title">
                     <h2 className="poppins font-bold">{title}</h2>
                     <div className="header-line"></div>
-                    { github ? <a href={github} rel="noreferrer" target='_blank'><i className="pi pi-github" href={github} style={{ color: "var(--primary-color)", fontSize: '1.3rem' }}></i></a> : "" }
-                    { url ? <a href={url} rel="noreferrer" target='_blank'><i className="pi pi-link" href={url} style={{ color: "var(--primary-color)", fontSize: '1.3rem' }}></i></a> : "" }
+                    { github ? <a aria-label="Github Link" href={github} rel="noreferrer" target='_blank'><i className="pi pi-github" href={github} style={{ color: "var(--primary-color)", fontSize: '1.3rem' }}></i></a> : "" }
+                    { url ? <a aria-label="Visit Link" href={url} rel="noreferrer" target='_blank'><i className="pi pi-link" href={url} style={{ color: "var(--primary-color)", fontSize: '1.3rem' }}></i></a> : "" }
                 </div>
                 <div className="bold project-card-tech">
                     <p>{tech}</p>
