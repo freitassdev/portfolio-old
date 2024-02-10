@@ -54,6 +54,8 @@ function App() {
                   <span className="skill">TypeScript</span>
                   <span className="skill">Node.js</span>
                   <span className="skill">React</span>
+                  <span className="skill">Shadcn/ui</span>
+                  <span className="skill">TailWind CSS</span>
                   <span className="skill">PrimeReact</span>
                   <span className="skill">Express</span>
                   <span className="skill">MongoDB</span>
