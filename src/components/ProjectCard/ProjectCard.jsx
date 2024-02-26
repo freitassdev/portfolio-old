@@ -14,8 +14,6 @@ const ProjectCard = ({ github, url, inDevelopment = false, title = "Em breve.", 
         description: PropTypes.string,
         tech: PropTypes.string,
         imageUrl: PropTypes.string
-
-
     };
 
     return (

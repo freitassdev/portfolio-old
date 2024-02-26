@@ -1,25 +1,33 @@
-import React, { useState, useEffect } from "react";
-import { Preload } from "@react-three/drei";
-
-const Loader = ({ setIsLoaded }) => {
+import { useState, useEffect } from "react";
+import './Loader.css';
+const Loader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setIsLoaded(!loading);
-  }, [loading, setIsLoaded]);
-
-  const handleLoaded = () => {
-    setLoading(false);
-  };
+    setTimeout(() => {
+      setLoading(!loading);
+      console.log(loading);
+    }, 3000);
+  }, []);
 
   return (
     <>
-      {loading && (
-        <div className="loader">
-          <p>Carregando...</p>
+      <div className="loader">
+        {/* <div className="loader-content">
+          <h1>&lt;/M&gt;</h1>
         </div>
-      )}
-      <Preload all onComplete={handleLoaded} />
+        <div className="loader-background">
+          <div>
+          </div>
+        </div> */}
+        <div className="open-container">
+          <div className="open-one">
+          </div>
+          <div className="open-two">
+          </div>
+        </div>
+
+      </div>
     </>
   );
 };
