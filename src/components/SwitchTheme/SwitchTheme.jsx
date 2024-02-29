@@ -1,5 +1,23 @@
 import './SwitchTheme.css';
+import { useEffect } from 'react';
 const SwitchTheme = () => {
+
+    useEffect(() => {
+        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        console.log(prefersDarkMode)
+        const body = document.body;
+        let checkbox = document.querySelector('.light-dark-toggle');
+        
+        if (prefersDarkMode) {
+            body.classList.add('is-dark');
+            checkbox.classList.add('light-dark-toggle-checked');
+        } else {
+            body.classList.remove('is-dark');
+            
+        }
+    }, []);
+
+
     function toggleDarkMode() {
         let checkbox = document.querySelector('.light-dark-toggle');
         checkbox.classList.toggle('light-dark-toggle-checked');
