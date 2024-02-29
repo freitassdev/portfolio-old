@@ -1,15 +1,5 @@
-import { useState, useEffect } from "react";
 import './Loader.css';
 const Loader = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(!loading);
-      console.log(loading);
-    }, 3000);
-  }, []);
-
   return (
     <>
       <div className="loader">
