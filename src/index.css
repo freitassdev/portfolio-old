@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 ::selection {
   background-color: #14b8a6; /* Cor de fundo da seleção */
@@ -36,6 +36,7 @@ body.is-dark {
   --surface-b: #09090b;
   --surface-a: #252529;
   --surface-c: #18181b;
+  --surface-d: #47474f;
   --box-color: rgba(24, 24, 27, .5);
   --points-color: rgba(40, 40, 49, 1);
   --topography-background: url(assets/images/topography-white.svg);
@@ -44,6 +45,7 @@ body.is-dark {
   --color-a: #454554;
   --hex-color: #111114;
   --title-color: #fff;
+  
 }
 
 body {

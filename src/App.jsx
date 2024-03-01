@@ -5,8 +5,8 @@ import Navbar from "./components/Navbar/Navbar"
 // import ComputersCanvas from './components/3d/Computer';
 import ProjectCard from './components/ProjectCard/ProjectCard';
 import Loader from './components/Loader/Loader';
+import CarrerItem from './components/CarrerItem/CarrerItem';
 function App() {
-
   return (
     <>
       <div className='main-div'>
@@ -31,7 +31,6 @@ function App() {
           <section id="box">
             <div className="box">
               <div id="about">
-
                 <div className='header-section'>
                   <div className="header-line"></div>
                   <h1 className="section-title big-size">
@@ -69,14 +68,15 @@ function App() {
                   </div>
                 </div>
               </div>
-              <br />
+              <br className='select-none' />
+              <br className='select-none' />
+              <br className='select-none' />
               <div id="projects">
                 <div className='header-section' style={{ flexDirection: "row" }}>
                   <div className="header-line"></div>
                   <h1 className="section-title big-size">
                     <span className="underfont">Projetos</span><span className="text-primary font-extrabold">&nbsp;#</span>
                   </h1>
-
                 </div>
                 <div className="projects-container">
                   <ProjectCard
@@ -100,7 +100,13 @@ function App() {
                     github='https://github.com/freitassdev/ds-etecjaragua'
                     url='https://ds-jaragua.vercel.app' />
 
-                  <ProjectCard />
+                  <ProjectCard
+                    title='GPT Free'
+                    tech='React - Node - Shadcn/ui - TailWind'
+                    description='Elaborado com o objetivo de promover meu curso e atrair novos alunos para minha Etec, este projeto contou com a participação de outros dois amigos. Na liderança da equipe, ministrei instruções básicas sobre React.js e node.js para eles.'
+                    github='https://github.com/freitassdev/ds-etecjaragua'
+                    url='https://ds-jaragua.vercel.app'
+                  />
                   <ProjectCard />
                   <ProjectCard />
                 </div>
@@ -109,21 +115,29 @@ function App() {
           </section>
 
           <section id="formation">
-            <div className='main-container'>
-              <div className='main-text-container' style={{ marginTop: "4rem" }}>
-                <h1 className='big-size'>Michel <span className='text-primary'>Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
-              </div>
+            <div className="formation-container">
+              <div className="header-line"></div>
+              <h1 className="section-title big-size">
+                <span className="text-primary font-extrabold">#</span> <span className="underfont">Formação</span>
+              </h1>
             </div>
           </section>
 
           <section id="carrer">
-            <div className='main-container'>
-              <div className='main-text-container' style={{ marginTop: "4rem" }}>
-                <h1 className='big-size'>Michel <span className='text-primary'>Freitas</span>,</h1> um desenvolvedor full stack iniciante apaixonado pela criação de aplicativos e serviços web. Tenho experiência com JavaScript, React.js, Node.js e, é claro, Express.js, além de outras bibliotecas e frameworks.
+          <div className="carrer-container">
+              <div className='header-section'>
+                <div className="header-line"></div>
+                <h1 className="section-title big-size">
+                  <span className="text-primary font-extrabold">#</span> <span className="underfont">Carreira</span>
+                </h1>
+              </div>
+              <div className="carrer-box">
+                <CarrerItem/>
               </div>
             </div>
           </section>
         </div>
+        <br />
         <div className="footer-container">
           <Footer />
         </div>

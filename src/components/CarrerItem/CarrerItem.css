@@ -1,0 +1,50 @@
+.carrer-item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 190px;
+    border-radius: 8px;
+    background-color: var(--surface-a);
+    gap: 20px
+}
+
+.carrer-item .title-and-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carrer-item .title-and-date h3 {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.carrer-item .role-and-city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.carrer-item .role-and-city h3 {
+    color: var(--primary-color)
+}   
+
+.carrer-item .description {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.carrer-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 200;
+    gap: 1.2rem;
+}
+
+.carrer-skills .carrer-skill span {
+    background-color: var(--surface-d);
+}

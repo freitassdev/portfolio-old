@@ -41,9 +41,8 @@ function Navbar() {
                                 <Link to="home" offset={-64} spy={true} smooth={true} duration={500}>INÍCIO</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="about" offset={-64} spy={true} smooth={true} duration={500}>SOBRE MIM</Link>
+                                <Link to="about" offset={-64} spy={true} smooth={true} duration={500} >SOBRE MIM</Link>
                             </li>
-
                             <li className="nav-item">
                                 <Link to="projects" offset={-64} spy={true} smooth={true} duration={500}>PROJETOS</Link>
                             </li>
