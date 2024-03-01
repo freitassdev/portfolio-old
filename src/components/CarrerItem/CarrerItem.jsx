@@ -26,7 +26,7 @@ const CarrerItem = ({ github, url, inDevelopment = false, title = "Em breve.", d
                 <p>São Paulo</p>
             </div>
             <div className="description">
-                Estágiario na Focus Têxtil. Atuo no desenvolvimento de sistemas web, utilizando diversas tecnologias
+                Estagiário na Focus Têxtil, onde atuo no desenvolvimento de sistemas web utilizando diversas tecnologias web, como React.js, TypeScript, e Express.js. Tenho experiência em desenvolvimento FullStack e estou sempre em busca de novos desafios e aprendizados.
             </div>
             <div className="carrer-skills">
                 <div className="carrer-skill">
@@ -43,6 +43,12 @@ const CarrerItem = ({ github, url, inDevelopment = false, title = "Em breve.", d
                 </div>
                 <div className="carrer-skill">
                     <span className="skill">Angular</span>
+                </div>
+                <div className="carrer-skill">
+                    <span className="skill">Express.js</span>
+                </div>
+                <div className="carrer-skill">
+                    <span className="skill">Nest.js</span>
                 </div>
                 <div className="carrer-skill">
                     <span className="skill">MongoDB</span>

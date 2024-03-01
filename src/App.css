@@ -246,3 +246,15 @@ h1, h2, h3, p {
     margin-top: 20px;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 920px) {
+    .carrer-container {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .carrer-container {
+        max-width: 90%;
+    }
+}

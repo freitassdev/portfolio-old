@@ -42,9 +42,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 200;
-    gap: 1.2rem;
+    gap: 10px;
 }
 
 .carrer-skills .carrer-skill span {
     background-color: var(--surface-d);
+    padding: 5px 8px;
+}
+
+.carrer-skills .carrer-skill {
+    margin-top: 7px;
 }

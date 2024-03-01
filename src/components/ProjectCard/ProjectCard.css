@@ -2,7 +2,8 @@
     flex-basis: 370px;
     display: flex;
     flex-direction: column;
-    width: 370px;
+    width: auto;
+    max-width: 370px;
 }
 
 .project-card-image {
@@ -14,7 +15,7 @@
 }
 
 .project-card-image img {
-    height: 180px;
+    height: auto;
     width: auto;
     position: absolute;
     bottom: 0;
