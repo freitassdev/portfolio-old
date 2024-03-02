@@ -228,7 +228,7 @@ h1, h2, h3, p {
     gap: 3rem;
 }
 
-.carrer-container {
+.carrer-container, .formation-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -243,18 +243,22 @@ h1, h2, h3, p {
     width: 100%;
     min-height: 40vh;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 10px;
 }
 
 @media screen and (max-width: 920px) {
-    .carrer-container {
+    .carrer-container, .formation-container  {
         max-width: 80%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .carrer-container {
+    .carrer-container, .formation-container {
         max-width: 90%;
     }
+}
+
+.timeline-container {
+    margin-top: 40px;
 }

@@ -1,11 +1,10 @@
 import Footer from './components/Footer/Footer';
 import './App.css'
 import Navbar from "./components/Navbar/Navbar"
-// import illustration from "./assets/images/illustration3.svg"
-// import ComputersCanvas from './components/3d/Computer';
 import ProjectCard from './components/ProjectCard/ProjectCard';
 import Loader from './components/Loader/Loader';
 import CarrerItem from './components/CarrerItem/CarrerItem';
+import Timeline from './components/Timeline/Timeline';
 function App() {
   return (
     <>
@@ -68,10 +67,10 @@ function App() {
                   </div>
                 </div>
               </div>
-              <br className='select-none' />
-              <br className='select-none' />
-              <br className='select-none' />
               <div id="projects">
+                <br className='select-none' />
+                <br className='select-none' />
+                <br className='select-none' />
                 <div className='header-section' style={{ flexDirection: "row" }}>
                   <div className="header-line"></div>
                   <h1 className="section-title big-size">
@@ -116,23 +115,28 @@ function App() {
 
           <section id="formation">
             <div className="formation-container">
-              <div className="header-line"></div>
-              <h1 className="section-title big-size">
-                <span className="text-primary font-extrabold">#</span> <span className="underfont">Formação</span>
-              </h1>
+              <div className='header-section'>
+                <div className="header-line"></div>
+                <h1 className="section-title big-size">
+                  <span className="text-primary font-extrabold">#</span> <span className="underfont">Formação</span>
+                </h1>
+              </div>
+              <div className="timeline-container">
+                <Timeline />
+              </div>
             </div>
           </section>
 
           <section id="carrer">
-          <div className="carrer-container">
-              <div className='header-section'>
+            <div className="carrer-container">
+              <div className='header-section' style={{ flexDirection: "row" }}>
                 <div className="header-line"></div>
                 <h1 className="section-title big-size">
-                  <span className="text-primary font-extrabold">#</span> <span className="underfont">Carreira</span>
+                  <span className="underfont">Carreira</span><span className="text-primary font-extrabold">&nbsp;#</span>
                 </h1>
               </div>
               <div className="carrer-box">
-                <CarrerItem/>
+                <CarrerItem />
               </div>
             </div>
           </section>
