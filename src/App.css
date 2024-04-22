@@ -1,10 +1,11 @@
-.main-container { 
+.main-container {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
     margin-top: 4rem;
 }
+
 .main-text-container {
     width: 100%;
     display: flex;
@@ -20,7 +21,7 @@
     font-weight: 400 !important;
     text-align: center;
     color: var(--title-color);
-    
+
 }
 
 .main-principal-title {
@@ -53,7 +54,7 @@
     color: var(--text-color);
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .main-container {
         margin-top: 2.5rem;
     }
@@ -73,43 +74,48 @@
     position: relative;
     opacity: 1;
 }
+
 .underfont::after {
     position: absolute;
     content: "";
-    background: rgba(20, 184, 166,.3);
-    border-top: 2px solid rgba(20, 184, 166,.5);
+    background: rgba(20, 184, 166, .3);
+    border-top: 2px solid rgba(20, 184, 166, .5);
     left: 0;
     right: 0;
     bottom: 0;
     height: 15px;
     z-index: -1;
 }
+
 .underfont-dark {
     display: inline-block;
     position: relative;
     opacity: 1;
 }
+
 .underfont-dark::after {
     position: absolute;
     content: "";
     background: rgba(101, 101, 102, 0.3);
-    border-top: 2px solid rgba(101, 101, 102,.5);
+    border-top: 2px solid rgba(101, 101, 102, .5);
     left: 0;
     right: 0;
     bottom: 0;
     height: 15px;
     z-index: -1;
 }
+
 .underfont-dark-mini {
     display: inline-block;
     position: relative;
     opacity: 1;
 }
+
 .underfont-dark-mini::after {
     position: absolute;
     content: "";
     background: rgba(101, 101, 102, 0.3);
-    border-top: 2px solid rgba(101, 101, 102,.5);
+    border-top: 2px solid rgba(101, 101, 102, .5);
     left: 0;
     right: 0;
     bottom: 0;
@@ -138,9 +144,11 @@
     box-shadow: 20px 20px 50px #00000080;
     border-radius: 16px;
 }
+
 .about-box .header-section {
     margin-top: 30px;
 }
+
 .about-content {
     margin-top: 20px;
     display: flex;
@@ -169,10 +177,12 @@
     flex-wrap: wrap;
     gap: 0.5rem;
 }
+
 .skills-title {
     font-family: 'Poppins', sans-serif;
     color: var(--text-color)
 }
+
 .skill {
     max-height: 35px;
     font-family: 'Nunito', sans-serif;
@@ -181,17 +191,23 @@
     border-radius: 999px;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
+
 @media screen and (max-width: 920px) {
     #about {
         padding: 3px;
     }
+
     .about-box {
         padding: 20px;
     }
+
     .about-content {
         flex-direction: column;
     }
@@ -203,15 +219,17 @@ h1, h2, h3, p {
     .about-skills {
         width: 100%;
     }
+
     .main-container {
         flex-direction: column;
     }
+
     .main-text-container {
         display: flex;
         flex-direction: column;
         padding: 20px;
     }
-    
+
 
     .box {
         padding: 30px 20px 80px 20px;
@@ -219,16 +237,23 @@ h1, h2, h3, p {
     }
 }
 
-.projects-container {
+.projects-flex-container {
     margin-top: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.projects-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem;
 }
 
-.carrer-container, .formation-container {
+.carrer-container,
+.formation-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -248,13 +273,17 @@ h1, h2, h3, p {
 }
 
 @media screen and (max-width: 920px) {
-    .carrer-container, .formation-container  {
+
+    .carrer-container,
+    .formation-container {
         max-width: 80%;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .carrer-container, .formation-container {
+
+    .carrer-container,
+    .formation-container {
         max-width: 90%;
     }
 }

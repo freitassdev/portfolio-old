@@ -16,7 +16,7 @@ function App() {
           <Fade triggerOnce direction='up'>
             <section id="home">
               <div className='main-container'>
-                <div className='main-text-container' style={{ marginTop: "4rem" }}>
+                <div className='main-text-container' style={{ marginTop: "8rem" }}>
                   <div className="main-hello-text">
                     <h1><span className='emoji'>👋🏼 </span>Olá, me chamo <span className="text-primary fw500">Michel Freitas</span>!</h1>
                   </div>
@@ -87,39 +87,41 @@ function App() {
                     </h1>
                   </div>
                 </Slide>
-                <div className="projects-container">
-                  <Slide triggerOnce direction='right'>
-                    <ProjectCard
-                      inDevelopment
-                      title='Chat App'
-                      tech='React - TypeScript - Express - MongoDB'
-                      description='Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva.'
-                      github='https://github.com/freitassdev/chat-frontend'
-                      url='https://chat.michelfreitas.com' />
+                <div className="projects-flex-container">
+                  <div className="projects-container">
+                    <Slide triggerOnce direction='right'>
+                      <ProjectCard
+                        inDevelopment
+                        title='Chat App'
+                        tech='React - TypeScript - Express - MongoDB'
+                        description='Desenvolvido como uma plataforma de comunicação instantânea, semelhante ao WhatsApp, este site possibilita a troca de mensagens em tempo real de maneira eficiente e intuitiva.'
+                        github='https://github.com/freitassdev/chat-frontend'
+                        url='https://chat.michelfreitas.com' />
 
-                    <ProjectCard
-                      title='Inteligência Artificial'
-                      tech='Python - Coco Dataset - Yolo'
-                      description='No Hackathon 2023 do Centro Paula Souza, desenvolvi uma inteligência artificial com o propósito de identificar em tempo real resíduos poluentes que foram descartados inadequadamente, como garrafas plásticas.'
-                      github='https://github.com/freitassdev' />
+                      <ProjectCard
+                        title='Inteligência Artificial'
+                        tech='Python - Coco Dataset - Yolo'
+                        description='No Hackathon 2023 do Centro Paula Souza, desenvolvi uma inteligência artificial com o propósito de identificar em tempo real resíduos poluentes que foram descartados inadequadamente, como garrafas plásticas.'
+                        github='https://github.com/freitassdev' />
 
-                    <ProjectCard
-                      title='DS Jaraguá'
-                      tech='React - Node - PrimeReact'
-                      description='Elaborado com o objetivo de promover meu curso e atrair novos alunos para minha Etec, este projeto contou com a participação de outros dois amigos. Na liderança da equipe, ministrei instruções básicas sobre React.js e node.js para eles.'
-                      github='https://github.com/freitassdev/ds-etecjaragua'
-                      url='https://ds-jaragua.vercel.app' />
+                      <ProjectCard
+                        title='DS Jaraguá'
+                        tech='React - Node - PrimeReact'
+                        description='Elaborado com o objetivo de promover meu curso e atrair novos alunos para minha Etec, este projeto contou com a participação de outros dois amigos. Na liderança da equipe, ministrei instruções básicas sobre React.js e node.js para eles.'
+                        github='https://github.com/freitassdev/ds-etecjaragua'
+                        url='https://ds-jaragua.vercel.app' />
 
-                    <ProjectCard
-                      title='GPT Free'
-                      tech='React - Node - Shadcn/ui - TailWind'
-                      description='Elaborado com o objetivo de promover meu curso e atrair novos alunos para minha Etec, este projeto contou com a participação de outros dois amigos. Na liderança da equipe, ministrei instruções básicas sobre React.js e node.js para eles.'
-                      github='https://github.com/freitassdev/ds-etecjaragua'
-                      url='https://ds-jaragua.vercel.app'
-                    />
-                    <ProjectCard />
-                    <ProjectCard />
-                  </Slide>
+                      <ProjectCard
+                        title='GPT Free'
+                        tech='React - Node - Shadcn/ui - TailWind'
+                        description='Elaborado com o objetivo de promover meu curso e atrair novos alunos para minha Etec, este projeto contou com a participação de outros dois amigos. Na liderança da equipe, ministrei instruções básicas sobre React.js e node.js para eles.'
+                        github='https://github.com/freitassdev/ds-etecjaragua'
+                        url='https://ds-jaragua.vercel.app'
+                      />
+                      <ProjectCard />
+                      <ProjectCard />
+                    </Slide>
+                  </div>
                 </div>
               </div>
             </div>
